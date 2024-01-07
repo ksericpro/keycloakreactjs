@@ -9,19 +9,6 @@
 
 # docker
 - docker build --build-arg KEYCLOAK_VERSION=21.1.1 -t keycloak --progress=plain --no-cache .
-- docker run -d --name keycloak -p 8080:8080 \
-         -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=password \
-         keycloak \
-         --verbose \
-         start \
-         --hostname-strict=false \
-         --optimized \
-         --http-enabled=true \
-         --db-url="jdbc:postgresql://<postgresql_db_hostname>/keycloak" \
-         --db-username=keycloak \
-         --db-password=password
-
-- docker logs -f keycloak
 
 # docker-compose
 - docker compose build --no-cache keycloak
@@ -37,8 +24,8 @@ d0c1c8263eb9   postgres:14-alpine         "docker-entrypoint.s…"   15 seconds 
 127.0.0.1 keycloack.com.au
 
 # Open browser
-http://localhost:8180/
-http://keycloak.com.au:8180/
+- http://localhost:8180/
+- http://keycloak.com.au:8180/
 
-click administrator console
-admin/password
+- click administrator console
+        admin/password
