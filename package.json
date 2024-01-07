@@ -1,0 +1,11 @@
+{
+  "name": "keycloakreactjs",
+  "version": "1.0.0",
+  "description": "(nodejs-react-keycloak] (https://medium.com/devops-dudes/secure-front-end-react-js-and-back-end-node-js-express-rest-api-with-keycloak-daf159f0a94e)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
